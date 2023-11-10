@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Test Specifications</title>
+</head>
+<body>
+    <h1>Unit Test Specifications for "multiplication" function:</h1>
+    <ul>
+        <li>Expect multiplication(2, 3) to be a number.</li>
+        
+        <!-- function multiplication(a, b) {
+            return a * b;
+          } -->
+        <!-- test('Expect multiplication(2, 3) to be a number', () => {
+            const result = multiplication(2, 3);
+            expect(typeof result).toBe('number');
+          }); -->
+        
+        <li>Expect multiplication(2, 3) to be equal to 6.</li>
+        
+        <!-- test('Expect multiplication(2, 3) to be equal to 6', () => {
+            const result = multiplication(2, 3);
+            expect(result).toBe(6);
+          }); -->
+
+        <li>Expect multiplication(0, 5) to be equal to 0.</li>
+
+        <!-- test('Expect multiplication(0, 5) to be equal to 0', () => {
+            const result = multiplication(0, 5);
+            expect(result).toBe(0);
+          }); -->
+
+    </ul>
+
+    <h1>Functional Test Specifications for shopping cart checkout feature:</h1>
+    <ul>
+        <li>When a user with an empty cart attempts to check out as a guest, they should be shown a message indicating that the cart is empty and be prompted to add items to the cart.</li>
+
+        <!-- test('User with an empty cart attempts to check out as a guest', () => {
+            Simulate a user with an empty shopping cart.
+            const user = {
+              cart: [],
+            };
+          
+            Simulate the user attempting to check out as a guest.
+            const isCartEmpty = user.cart.length === 0;
+          
+            if (isCartEmpty) {
+            The cart is empty, and the user should see a message.
+            You can add code to show the message to the user and prompt them to add items to the cart.
+            } -->
+
+        <li>When a user with items in the cart selects "Check Out as Guest," they should be directed to the checkout process and asked for their shipping information.</li>
+
+        <!-- const user = {
+            cart: ['item1', 'item2', 'item3'],
+          };
+          
+          Simulated function to handle the checkout process
+          function checkoutAsGuest(user) {
+            if (user.cart.length > 0) {
+            User has items in the cart, so proceed to the checkout process.
+             
+            console.log('Redirecting to the checkout process...');
+              console.log('Asking for shipping information...');
+             
+              checkoutAsGuest(user);
+            } else  -->
+
+
+        <li>When an email is submitted in a input form, a message should populate saying "Thank you for susbscribing"</li>
+        
+        <!-- <div id="message" style="display: none;">
+            Thank you for subscribing.
+          </div>
+        const form = document.getElementById('subscription-form');
+        const message = document.getElementById('message');
+        Event listener for form submission
+       
+        form.addEventListener('submit', function(event) {
+        event.preventDefault(); // Prevent the form from submitting the traditional way
+       
+        Display the message
+        message.style.display = 'block';
+        }); -->
+
+        <!-- Add more test specifications here -->
+
+        
+    </ul>
+
+    <ul>
+        <li>Expect multiplication(2, 3) to be a number.</li>
+        
+        <!-- function multiplication(a, b) {
+            return a * b;
+          } -->
+        <!-- test('Expect multiplication(2, 3) to be a number', () => {
+            const result = multiplication(2, 3);
+            expect(typeof result).toBe('number');
+          }); -->
+        
+        <li>Expect multiplication(2, 3) to be equal to 6.</li>
+        
+        <!-- test('Expect multiplication(2, 3) to be equal to 6', () => {
+            const result = multiplication(2, 3);
+            expect(result).toBe(6);
+          }); -->
+
+        <li>Expect multiplication(0, 5) to be equal to 0.</li>
+
+        <!-- test('Expect multiplication(0, 5) to be equal to 0', () => {
+            const result = multiplication(0, 5);
+            expect(result).toBe(0);
+          }); -->
+
+    </ul>
+    
+    <h1>ContactODDs Functional Test Specifications </h1>
+    <ul>
+        <li>Scenario 1: Combining Two Arrays with Odd Numbers
+
+            Input:
+            arr1: [3, 5, 7]
+            arr2: [9, 1, 11]
+            Expected Output:
+            [1, 3, 5, 7, 9, 11]</li>
+
+            // Input arrays
+            const arr1 = [3, 5, 7];
+            const arr2 = [9, 1, 11];
+
+            <!-- Concatenate and filter to remove duplicates
+            const combinedArray = arr1.concat(arr2);
+            const uniqueArray = Array.from(new Set(combinedArray));
+
+            Sort the unique array in ascending order
+            uniqueArray.sort((a, b) => a - b);
+
+            Output the result
+            console.log(uniqueArray); // Output: [1, 3, 5, 7, 9, 11] -->
+
+
+        <li>Scenario 2: Combining Two Arrays with Even Numbers
+
+            <!-- Input:
+            arr1: [2, 4, 6]
+            arr2: [8, 10, 12]
+            Expected Output:
+            An empty array ([]), as there are no odd numbers in either input array.
+
+            Input arrays
+            const arr1 = [2, 4, 6];
+            const arr2 = [8, 10, 12];
+
+            Concatenate the arrays and filter for odd numbers
+            const combinedArray = arr1.concat(arr2);
+            const oddNumbers = combinedArray.filter(number => number % 2 !== 0);
+
+            Check if the oddNumbers array is empty
+            if (oddNumbers.length === 0) {
+            console.log([]); // Output: [] -->
+
+
+        <li>Scenario 3: Combining One Array with Odd Numbers and One Array with Even Numbers
+    
+            Input:
+            arr1: [2, 4, 6]
+            arr2: [3, 5, 7]
+            Expected Output:
+            [3, 5, 7], as only the odd numbers from arr2 are included.</li>
+
+            <!-- Input arrays
+            const arr1 = [2, 4, 6];
+            const arr2 = [3, 5, 7];
+
+            Concatenate the arrays and filter for odd numbers
+            const combinedArray = arr1.concat(arr2);
+            const oddNumbers = combinedArray.filter(number => number % 2 !== 0);
+
+            Output the result
+            console.log(oddNumbers); // Output: [3, 5, 7] -->
+
+
+    </ul>
+
+</body>
+</html>
